@@ -5,12 +5,10 @@
 			width: 75%;
 			margin: 0 auto;
 			padding-top: 5px;
-
-		}
-		.container{
-			background-color: rgb(255, 248, 248);
+			background-color: rgb(243, 243, 243);
 			width: 100%;
 			height: 43px;
+
 		}
 		
 		#logo{
@@ -34,10 +32,11 @@
 			margin-top: 4px;
 		    font-family: 'Alegreya Sans', sans-serif; 
 			justify-content: space-between;
+			color: black;
 		}
 		.navi a{
 			text-decoration: none;
-			color: rgb(14, 13, 13);
+			color: black; 
 			margin-right: 70px;
 			font-size: 15px;
 			justify-content: space-between;
@@ -64,7 +63,7 @@
 			text-align: center;
 			margin: 15px;
 			display: inline-block;
-			width: 200px;
+			width:100%;
 		}
 		
 		.childnav :hover{
@@ -83,6 +82,7 @@
 		}
 		.icons{
 			display: flex;
+			justify-content: space-between;
 			background-color: rgb(255, 248, 248);
 			
 		}	
@@ -161,12 +161,23 @@
 			text-align: center;
 			margin: 15px;
 			display: inline-block;
-			width: 20%;
+			width: 100%;
 		}
 		.product-card img {
 			max-width: 100%;
 			height: auto;
 		
+		}
+		.main3{
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr  ;
+			gap: 20px;
+			
+		}
+		.iconname ul{
+			list-style-type: none;
+			display: flex;
+			justify-content: space-between;
 		}
 		
 	
