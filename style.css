@@ -2,13 +2,16 @@
         
 
 		.container{
-			width: 75%;
+			display: flex;
+			width: 100%;
 			margin: 0 auto;
 			padding-top: 5px;
 			background-color: rgb(243, 243, 243);
-			width: 100%;
 			height: 43px;
 
+		}
+		body{
+			background-color: rgb(243, 243, 243) ;
 		}
 		
 		#logo{
@@ -31,7 +34,6 @@
 			left: 19%;
 			margin-top: 4px;
 		    font-family: 'Alegreya Sans', sans-serif; 
-			justify-content: space-between;
 			color: black;
 		}
 		.navi a{
@@ -53,19 +55,10 @@
 		}
 		.childnav{
 			background-color: white;
-			border-left:80px;
-			
-		}.product-card {
-			background-color: #fff;
-			border: 1px solid #ddd;
-			border-radius: 8px;
-			padding: 15px;
-			text-align: center;
-			margin: 15px;
-			display: inline-block;
+			border-left:100px;
 			width:100%;
+			
 		}
-		
 		.childnav :hover{
 			opacity: .5;
 			transition: .3s;
@@ -76,6 +69,7 @@
             height: 100px;
             width: 200%;
 			justify-content: right;
+			background-color: rgb(243, 243, 243) ;
 			
 
 			
@@ -154,32 +148,156 @@
 			margin:10px;
 	        
 		}
-		.product-card {
-			background-color: #fff;
-			border: 0px  #ddd;
-			padding: 1px;
-			text-align: center;
-			margin: 15px;
-			display: inline-block;
-			width: 100%;
-		}
-		.product-card img {
-			max-width: 100%;
-			height: auto;
-		
-		}
-		.main3{
-			display: grid;
-			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr  ;
-			gap: 20px;
-			
-		}
+
 		.iconname ul{
 			list-style-type: none;
 			display: flex;
 			justify-content: space-between;
+			background-color:  rgb(243, 243, 243);
+		}
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
 		}
 		
-	
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f5f5f5;
+		}
+		
+		.slider-container {
+			position: relative;
+			width: 90%;
+			margin: auto;
+			overflow: hidden;
+			padding: 20px 0;
+			background-color: white;
+		}
+		
+		.slider {
+			display: flex;
+			transition: transform 0.5s ease-in-out;
+			width: max-content;
+		}
+		
+		.slider-item {
+			min-width: 250px;
+			margin: 0 10px;
+			padding: 20px;
+			
+			border-radius: 15px;
+			text-align: center;
+			color: white;
+		}
+		
+		.slider-item img {
+			width: 80px;
+			height: auto;
+			margin-top: 10px;
+		}
+		
+		.slider-item h3 {
+			font-size: 18px;
+			margin-bottom: 10px;
+		}
+		
+		.slider-item p {
+			font-size: 14px;
+			line-height: 1.5;
+		}
+		
+		.prev-btn, .next-btn {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			background-color: rgba(0, 0, 0, 0.5);
+			color: white;
+			border: none;
+			font-size: 20px;
+			padding: 10px;
+			cursor: pointer;
+			z-index: 1;
+		}
+		.prev-btn {
+			left: 10px;
+		}
+		.next-btn {
+			right: 10px;
+		}
+		.prev-btn:hover, .next-btn:hover {
+			background-color: rgba(0, 0, 0, 0.8);
+		}
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f5f5f5;
+		}
+		.section-title {
+			text-align: center;
+			font-size: 24px;
+			margin: 20px 0;
+		}
+		.slider-container {
+			position: relative;
+			width: 90%;
+			margin: auto;
+			overflow: hidden;
+			padding: 20px 0;
+			background-color: white;
+		}
+		.slider {
+			display: flex;
+			transition: transform 0.5s ease-in-out;
+			width: max-content;
+		}
+		.slider-item {
+			min-width: 200px;
+			margin: 0 10px;
+			padding: 20px;
+			background-color: #fff;
+			border-radius: 10px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			text-align: center;
+		}
+		.slider-item img {
+			width:300px;
+			height: auto;
+			margin-bottom: 10px;
+		}
+		.slider-item h3 {
+			font-size: 16px;
+			margin-bottom: 8px;
+			color: #333;
+		}
+		.slider-item p {
+			font-size: 14px;
+			color: #777;
+		}
+		.prev-btn, .next-btn {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			background-color: rgba(0, 0, 0, 0.5);
+			color: white;
+			border: none;
+			font-size: 20px;
+			padding: 10px;
+			cursor: pointer;
+			z-index: 1;
+		}
+		.prev-btn {
+			left: 10px;
+		}
+		.next-btn {
+			right: 10px;
+		}
+		.prev-btn:hover, .next-btn:hover {
+			background-color: rgba(0, 0, 0, 0.8);
+		}
 		
 		
